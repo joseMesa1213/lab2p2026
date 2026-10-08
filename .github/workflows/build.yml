@@ -105,7 +105,7 @@ jobs:
         run: mvn -B package -DskipTests --file pom.xml
       #Build the application using Maven
       - name: Upload JAR
-        #This uploads artifacts from your workflow allowing you to share data between jobs and store data once a workflow is complete.
+        #This uploads artifacts from your workflow allowing you to share data between jobs and store data once a workflow is complete
         uses: actions/upload-artifact@v4
         with:
           #Set artifact name
